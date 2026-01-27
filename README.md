@@ -1,7 +1,7 @@
 
-  # Sitio Web Institucional Logia
+  # galileo3 (Community)
 
-  This is a code bundle for Sitio Web Institucional Logia. The original project is available at https://www.figma.com/design/peHqTN5kkTK0lDtHSKw6cS/Sitio-Web-Institucional-Logia.
+  This is a code bundle for galileo3 (Community). The original project is available at https://www.figma.com/design/ALAQCWby3dqAb8W6gqxlUV/galileo3--Community-.
 
   ## Running the code
 

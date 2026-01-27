@@ -1,8 +1,8 @@
 import { MessageSquare, Calendar, Users, BookOpen, Facebook } from 'lucide-react';
-import logoGalileo from 'figma:asset/207f63723d2cae9a48995db2e974c005a0ad8f00.png';
-import victorRendon from 'figma:asset/79c93fea4f8c1801b2e1ca110e18f26bccc265e3.png';
-import davidVivas from 'figma:asset/5cd884a7bc4504f8cf6049c4054a373c7f18cb13.png';
-import enriqueAznar from 'figma:asset/d8efea198c25a0cc4c0fd397c9db9d2bb75cd8a6.png';
+import logoGalileo from '../assets/207f63723d2cae9a48995db2e974c005a0ad8f00.png';
+import victorRendon from '../assets/79c93fea4f8c1801b2e1ca110e18f26bccc265e3.png';
+import davidVivas from '../assets/5cd884a7bc4504f8cf6049c4054a373c7f18cb13.png';
+import enriqueAznar from '../assets/d8efea198c25a0cc4c0fd397c9db9d2bb75cd8a6.png';
 
 export default function App() {
   const handleWhatsApp = () => {
@@ -298,6 +298,272 @@ export default function App() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ¿Quieres ingresar a la masonería? Section */}
+      <section className="py-24 px-8" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="max-w-6xl mx-auto">
+          <h2 
+            className="mb-12 text-center text-black"
+            style={{ 
+              fontFamily: 'Playfair Display, serif',
+              fontSize: '3rem',
+              fontWeight: 600
+            }}
+          >
+            ¿Quieres ingresar a la masonería?
+          </h2>
+          
+          <div className="w-24 h-1 mx-auto mb-16" style={{ backgroundColor: '#E63946' }}></div>
+          
+          <div className="max-w-4xl mx-auto mb-16">
+            <p className="text-lg leading-relaxed text-center" style={{ color: '#333' }}>
+              Antes de decidir unirse a la masonería, una persona debe considerar varios factores para asegurarse 
+              de que esta organización y sus principios se alineen con sus propios valores y expectativas. 
+              Aquí hay algunas consideraciones clave:
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {/* Consideración 1 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Comprender los principios y valores masónicos
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Investigar y entender los principios fundamentales de la masonería, tales como la fraternidad, 
+                la moralidad, la caridad, y la búsqueda de la verdad. Asegurarse de que estos valores resuenan 
+                con sus propias creencias y ética personal.
+              </p>
+            </div>
+
+            {/* Consideración 2 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Investigación personal
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Leer libros, artículos y recursos en línea sobre la historia, filosofía y prácticas de la masonería. 
+                Comprender los rituales, símbolos y grados masónicos puede proporcionar una visión más clara de lo 
+                que implica ser un masón.
+              </p>
+            </div>
+
+            {/* Consideración 3 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Creencia en un Ser Supremo
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                La mayoría de las logias masónicas requieren una creencia en un Ser Supremo o en un principio creador, 
+                aunque no se especifica una religión particular. Evaluar si esta creencia se alinea con sus propias 
+                convicciones espirituales.
+              </p>
+            </div>
+
+            {/* Consideración 4 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Tiempo y compromiso
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Considerar el tiempo necesario para participar activamente en una logia masónica, que incluye asistir 
+                a reuniones regulares, eventos y estudios masónicos. Asegurarse de poder cumplir con estos compromisos 
+                sin que interfieran negativamente con sus responsabilidades personales y profesionales.
+              </p>
+            </div>
+
+            {/* Consideración 5 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Motivaciones personales
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Reflexionar sobre sus razones para unirse a la masonería. La masonería debe ser vista como una oportunidad 
+                para el crecimiento personal y el servicio a la comunidad, no como un medio para obtener beneficios 
+                materiales o profesionales.
+              </p>
+            </div>
+
+            {/* Consideración 6 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Proceso de ingreso
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Informarse sobre el proceso de solicitud, que incluye presentar una solicitud formal, someterse a 
+                entrevistas y una investigación de antecedentes, y participar en una ceremonia de iniciación.
+              </p>
+            </div>
+
+            {/* Consideración 7 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Expectativas de la logia
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Entender las expectativas que la logia tiene de sus miembros en términos de participación, conducta 
+                y contribuciones. Cada logia puede tener requisitos específicos que los aspirantes deben conocer y 
+                estar dispuestos a cumplir.
+              </p>
+            </div>
+
+            {/* Consideración 8 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Compatibilidad con valores personales
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Evaluar si los principios y prácticas de la masonería son compatibles con sus propios valores y creencias. 
+                La masonería enfatiza la moralidad, la ética y el desarrollo personal.
+              </p>
+            </div>
+
+            {/* Consideración 9 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Impacto en la vida personal y familiar
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Considerar cómo la membresía masónica podría afectar su vida personal y familiar. Es importante tener 
+                el apoyo de su familia y asegurarse de que el compromiso con la logia no cause conflictos significativos 
+                con sus responsabilidades personales y profesionales.
+              </p>
+            </div>
+
+            {/* Consideración 10 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Hablar con miembros actuales
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Conversar con masones actuales puede proporcionar una perspectiva más realista sobre la vida dentro de 
+                la masonería. Los miembros pueden compartir sus experiencias personales y responder preguntas específicas 
+                sobre la organización.
+              </p>
+            </div>
+
+            {/* Consideración 11 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Finanzas
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Considerar los costos asociados con la membresía, que pueden incluir cuotas de iniciación, cuotas anuales 
+                y otros gastos relacionados con la participación en actividades y eventos de la logia.
+              </p>
+            </div>
+
+            {/* Consideración 12 */}
+            <div className="bg-white p-8 border-l-4" style={{ borderColor: '#2B2F9E' }}>
+              <h3 
+                className="mb-4 text-black"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  fontSize: '1.5rem',
+                  fontWeight: 600
+                }}
+              >
+                Confidencialidad y secretismo
+              </h3>
+              <p className="text-base leading-relaxed" style={{ color: '#555' }}>
+                Entender la importancia de la confidencialidad y el secreto dentro de la masonería. Los masones están 
+                comprometidos a mantener ciertos aspectos de sus prácticas y rituales en privado.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg leading-relaxed mb-8" style={{ color: '#333' }}>
+              Evaluar estas consideraciones puede ayudar a una persona a tomar una decisión informada y consciente 
+              sobre su deseo de unirse a la masonería. Es un compromiso significativo que debe ser abordado con 
+              seriedad y reflexión.
+            </p>
+            
+            <p className="text-lg leading-relaxed text-center" style={{ color: '#2B2F9E', fontWeight: 600 }}>
+              Tras haber evaluado los puntos anteriores y pensando que no tienes ningún inconveniente con lo que vives 
+              actualmente en tu vida, piensa que el siguiente paso es revisar los requisitos necesarios para poder 
+              ingresar a la masonería.
+            </p>
           </div>
         </div>
       </section>

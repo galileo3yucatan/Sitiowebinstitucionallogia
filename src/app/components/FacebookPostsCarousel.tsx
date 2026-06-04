@@ -54,10 +54,11 @@ export default function FacebookPostsCarousel() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: true,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -106,18 +107,17 @@ export default function FacebookPostsCarousel() {
 
           .fb-post-wrapper {
             width: 100%;
-            max-width: 90vw;
-            height: 310px;
+            max-width: 520px;
+            height: 360px;
             overflow: hidden;
-            border-radius: 12px;
+            border-radius: 14px;
             margin: 0 auto;
             background: transparent;
           }
 
           @media (max-width: 768px) {
             .fb-post-wrapper {
-              width: 100%;
-              max-width: 92vw;
+              max-width: 360px;
               height: 310px;
             }
 
@@ -129,7 +129,7 @@ export default function FacebookPostsCarousel() {
         `}
       </style>
 
-      <div className="max-w-7xl mx-auto">
+     <div className="max-w-[720px] mx-auto px-4">
         <h2
           className="mb-6 text-center text-white"
           style={{
@@ -162,12 +162,13 @@ export default function FacebookPostsCarousel() {
                 <div key={index} className="px-4">
                   <div className="fb-post-wrapper">
                     <iframe
-                      src={`https://www.facebook.com/plugins/post.php?href=${encodedUrl}&show_text=false&width=360`}
-                      width="360"
-                      height="310"
+                      src={`https://www.facebook.com/plugins/post.php?href=${encodedUrl}&show_text=false&width=500`}
+                      width="500"
+                      height="420"
                       style={{
                         border: "none",
                         overflow: "hidden",
+                        width: "100%",
                       }}
                       scrolling="no"
                       frameBorder="0"

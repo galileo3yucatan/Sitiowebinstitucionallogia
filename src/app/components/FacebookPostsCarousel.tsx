@@ -44,7 +44,7 @@ export default function FacebookPostsCarousel() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -52,7 +52,7 @@ export default function FacebookPostsCarousel() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -105,7 +105,7 @@ export default function FacebookPostsCarousel() {
           }
 
           .fb-post-wrapper {
-            width: 360px;
+            width: 100%;
             max-width: 90vw;
             height: 310px;
             overflow: hidden;
@@ -116,7 +116,7 @@ export default function FacebookPostsCarousel() {
 
           @media (max-width: 768px) {
             .fb-post-wrapper {
-              width: 360px;
+              width: 100%;
               max-width: 92vw;
               height: 310px;
             }
@@ -154,7 +154,7 @@ export default function FacebookPostsCarousel() {
           acontecimientos más recientes.
         </p>
 
-         <div className="px-2 md:px-12">
+<        div className="max-w-[540px] mx-auto px-4 overflow-hidden">
           <Slider {...settings}>
             {facebookPosts.map((postUrl, index) => {
               const encodedUrl = encodeURIComponent(postUrl);

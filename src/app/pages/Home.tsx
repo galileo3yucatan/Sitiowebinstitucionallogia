@@ -5,10 +5,10 @@ import FacebookPostsCarousel from '../components/FacebookPostsCarousel';
 
 export default function Home() {
   // Rutas de las imágenes locales
-  const logoGalileo = '/src/assets/207f63723d2cae9a48995db2e974c005a0ad8f00.png';
-  const victorRendon = '/src/assets/79c93fea4f8c1801b2e1ca110e18f26bccc265e3.png';
-  const davidVivas = '/src/assets/5cd884a7bc4504f8cf6049c4054a373c7f18cb13.png';
-  const enriqueAznar = '/src/assets/d8efea198c25a0cc4c0fd397c9db9d2bb75cd8a6.png';
+  const logoGalileo = '/assets/207f63723d2cae9a48995db2e974c005a0ad8f00.png';
+  const victorRendon = '/assets/79c93fea4f8c1801b2e1ca110e18f26bccc265e3.png';
+  const davidVivas = '/assets/5cd884a7bc4504f8cf6049c4054a373c7f18cb13.png';
+  const enriqueAznar = '/assets/d8efea198c25a0cc4c0fd397c9db9d2bb75cd8a6.png';
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

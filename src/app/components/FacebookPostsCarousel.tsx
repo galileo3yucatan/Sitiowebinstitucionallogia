@@ -16,11 +16,11 @@ function NextArrow(props: any) {
   return (
     <button
       onClick={onClick}
-      className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-lg"
+      className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-lg"
       style={{ backgroundColor: "#FFE31A", color: "#2B2F9E" }}
       aria-label="Siguiente"
     >
-      <ChevronRight className="w-6 h-6" />
+      <ChevronRight className="w-5 h-5" />
     </button>
   );
 }
@@ -30,11 +30,11 @@ function PrevArrow(props: any) {
   return (
     <button
       onClick={onClick}
-      className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-lg"
+      className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-lg"
       style={{ backgroundColor: "#FFE31A", color: "#2B2F9E" }}
       aria-label="Anterior"
     >
-      <ChevronLeft className="w-6 h-6" />
+      <ChevronLeft className="w-5 h-5" />
     </button>
   );
 }
@@ -105,22 +105,22 @@ export default function FacebookPostsCarousel() {
             display: block;
           }
 
-          .fb-post-wrapper {
-            width: 100%;
-            max-width: 520px;
-            height: 360px;
-            overflow: hidden;
-            border-radius: 14px;
-            margin: 0 auto;
-            background: transparent;
-          }
-
-          @media (max-width: 768px) {
             .fb-post-wrapper {
-              max-width: 360px;
-              height: 310px;
+              width: 100%;
+              max-width: 520px;
+              height: 430px;
+              overflow: hidden;
+              border-radius: 14px;
+              margin: 0 auto;
+              background: transparent;
             }
 
+            @media (max-width: 768px) {
+              .fb-post-wrapper {
+                max-width: 380px;
+                height: 360px;
+              }
+            }
             #publicaciones {
               padding-left: 12px;
               padding-right: 12px;
@@ -164,7 +164,7 @@ export default function FacebookPostsCarousel() {
                     <iframe
                       src={`https://www.facebook.com/plugins/post.php?href=${encodedUrl}&show_text=false&width=500`}
                       width="500"
-                      height="420"
+                      height="450"
                       style={{
                         border: "none",
                         overflow: "hidden",

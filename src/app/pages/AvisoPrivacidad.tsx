@@ -266,11 +266,13 @@ export default function AvisoPrivacidad() {
                 color: '#2B2F9E'
               }}
             >
-              6. Cookies y tecnologías
+              6. Cookies 
             </h2>
             <p className="text-lg leading-relaxed" style={{ color: '#333' }}>
-              El sitio web puede utilizar cookies para mejorar la experiencia de navegación. 
-              Puede deshabilitarlas desde su navegador.
+              Aunque este sitio web no utiliza intencionalmente cookies para recopilar información personal 
+              de sus visitantes, algunos servicios o componentes proporcionados por terceros podrían emplear 
+              tecnologías similares necesarias para su funcionamiento.El usuario puede consultar y administrar dichas 
+              configuraciones desde su navegador de Internet.
             </p>
           </div>
 

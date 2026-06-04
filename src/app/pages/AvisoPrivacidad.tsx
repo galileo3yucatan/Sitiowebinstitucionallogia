@@ -2,7 +2,7 @@ import { ArrowLeft, Mail, Shield, Lock, FileText, AlertCircle } from 'lucide-rea
 import { Link } from 'react-router';
 
 export default function AvisoPrivacidad() {
-  const logoGalileo = '/src/assets/207f63723d2cae9a48995db2e974c005a0ad8f00.png';
+  const logoGalileo = '/assets/207f63723d2cae9a48995db2e974c005a0ad8f00.png';
 
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>

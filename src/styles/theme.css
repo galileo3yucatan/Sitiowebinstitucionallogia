@@ -178,4 +178,21 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+
+
+  .hero-galileo {
+  background-image: url("/assets/HERO_COOL.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+  @media (max-width: 768px) {
+   .hero-galileo {
+    background-image: url("/assets/HERO_MOBILE.png");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 }

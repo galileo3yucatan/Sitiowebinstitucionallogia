@@ -11,13 +11,25 @@ const facebookPosts = [
   "https://www.facebook.com/Galileo03/posts/pfbid02Lpn2nDoJtt7oUJJbMWt74aAHBwo9CSuuQpwxsCv6PM5PrRCw98eKgkR16WmN8k6Pl",
 ];
 
+const colors = {
+  night: "#080D24",
+  darkBlue: "#0D1B3D",
+  oldGold: "#C9A44C",
+  illuminatedGold: "#E1C06A",
+  lunarSilver: "#B7BDC6",
+};
+
 function NextArrow(props: any) {
   const { onClick } = props;
+
   return (
     <button
       onClick={onClick}
       className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-lg"
-      style={{ backgroundColor: "#FFE31A", color: "#2B2F9E" }}
+      style={{
+        backgroundColor: colors.oldGold,
+        color: colors.night,
+      }}
       aria-label="Siguiente"
     >
       <ChevronRight className="w-5 h-5" />
@@ -27,11 +39,15 @@ function NextArrow(props: any) {
 
 function PrevArrow(props: any) {
   const { onClick } = props;
+
   return (
     <button
       onClick={onClick}
       className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-lg"
-      style={{ backgroundColor: "#FFE31A", color: "#2B2F9E" }}
+      style={{
+        backgroundColor: colors.oldGold,
+        color: colors.night,
+      }}
       aria-label="Anterior"
     >
       <ChevronLeft className="w-5 h-5" />
@@ -74,8 +90,7 @@ export default function FacebookPostsCarousel() {
       id="publicaciones"
       className="py-24 px-8 relative"
       style={{
-        background:
-          "linear-gradient(135deg, #1a1d5e 0%, #2B2F9E 50%, #3d42b8 100%)",
+        background: colors.night,
         scrollMarginTop: "80px",
       }}
     >
@@ -84,43 +99,34 @@ export default function FacebookPostsCarousel() {
           .custom-dots {
             bottom: -50px;
           }
+
           .custom-dots li button:before {
-            color: #FFE31A;
+            color: ${colors.illuminatedGold};
             font-size: 12px;
-            opacity: 0.5;
+            opacity: 0.45;
           }
+
           .custom-dots li.slick-active button:before {
             opacity: 1;
-            color: #FFE31A;
+            color: ${colors.illuminatedGold};
           }
-          .fb-post-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 500px;
-            padding: 0;
-          }
-          .fb-post-container iframe {
+
+          .fb-post-wrapper {
+            width: 100%;
+            max-width: 520px;
+            height: 430px;
+            overflow: hidden;
+            border-radius: 14px;
             margin: 0 auto;
-            display: block;
+            background: transparent;
           }
 
+          @media (max-width: 768px) {
             .fb-post-wrapper {
-              width: 100%;
-              max-width: 520px;
-              height: 430px;
-              overflow: hidden;
-              border-radius: 14px;
-              margin: 0 auto;
-              background: transparent;
+              max-width: 380px;
+              height: 360px;
             }
 
-            @media (max-width: 768px) {
-              .fb-post-wrapper {
-                max-width: 380px;
-                height: 360px;
-              }
-            }
             #publicaciones {
               padding-left: 12px;
               padding-right: 12px;
@@ -129,13 +135,14 @@ export default function FacebookPostsCarousel() {
         `}
       </style>
 
-     <div className="max-w-[720px] mx-auto px-4">
+      <div className="max-w-[720px] mx-auto px-4">
         <h2
-          className="mb-6 text-center text-white"
+          className="mb-6 text-center"
           style={{
             fontFamily: "Playfair Display, serif",
             fontSize: "3rem",
             fontWeight: 600,
+            color: colors.illuminatedGold,
           }}
         >
           Publicaciones Recientes
@@ -143,21 +150,22 @@ export default function FacebookPostsCarousel() {
 
         <div
           className="w-24 h-1 mx-auto mb-8"
-          style={{ backgroundColor: "#E63946" }}
-        ></div>
+          style={{ backgroundColor: colors.oldGold }}
+        />
 
         <p
           className="text-lg leading-relaxed text-center mb-16 opacity-90 max-w-3xl mx-auto"
-          style={{ color: "#fff" }}
+          style={{ color: colors.lunarSilver }}
         >
-          Consulta nuestras reflexiones, actividades y
-          acontecimientos más recientes.
+          Consulta nuestras reflexiones, actividades y acontecimientos más
+          recientes.
         </p>
 
-<        div className="max-w-[540px] mx-auto px-4 overflow-hidden">
+        <div className="max-w-[540px] mx-auto px-4 overflow-hidden">
           <Slider {...settings}>
             {facebookPosts.map((postUrl, index) => {
               const encodedUrl = encodeURIComponent(postUrl);
+
               return (
                 <div key={index} className="px-4">
                   <div className="fb-post-wrapper">

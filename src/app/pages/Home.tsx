@@ -6,6 +6,7 @@ import FacebookPostsCarousel from '../components/FacebookPostsCarousel';
 export default function Home() {
   // Rutas de las imágenes locales
   const logoGalileo = '/assets/new_galileo_logo.png';
+  const emblemaGalileo = "/assets/EMBLEMA_GALILEO.png"; // Hero
   const victorRendon = '/assets/79c93fea4f8c1801b2e1ca110e18f26bccc265e3.png';
   const davidVivas = '/assets/5cd884a7bc4504f8cf6049c4054a373c7f18cb13.png';
   const enriqueAznar = '/assets/d8efea198c25a0cc4c0fd397c9db9d2bb75cd8a6.png';
@@ -43,11 +44,11 @@ export default function Home() {
     <div className="min-h-screen" style={{ fontFamily: 'Montserrat, sans-serif', backgroundColor: colors.darkerBg }}>
       {/* Navigation Menu - Premium Dark */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md" style={{ backgroundColor: 'rgba(10, 14, 39, 0.95)' }}>
-        <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="max-w-7xl mx-auto px-6 py-2">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('inicio')}>
-              <img src={logoGalileo} alt="Logo" className="w-10 h-10 object-contain" style={{ filter: 'brightness(1.2) contrast(1.1)' }} />
+              <img src={logoGalileo} alt="Logo" className="w-12 h-12 object-contain" style={{ filter: 'brightness(1.15) contrast(1.05)' }} />
               <span
                 className="text-sm tracking-wider"
                 style={{
@@ -200,13 +201,27 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           {/* Logo sutil arriba */}
-        <div className="mx-auto mb-8 opacity-90 flex justify-center">
+{/* Emblema principal */}
+        <div className="mx-auto mb-2 flex justify-center">
           <img
-            src={logoGalileo}
-            alt="Logo Galileo Nº 3"
-            className="w-32 md:w-40 lg:w-48 h-auto"
+            src={emblemaGalileo}
+            alt="Emblema Galileo 3"
+            className="
+              w-64
+              md:w-80
+              lg:w-[360px]
+              xl:w-[400px]
+              h-auto
+              object-contain
+              transition-all
+              duration-500
+              hover:scale-[1.02]
+            "
             style={{
-              filter: 'brightness(1.3) sepia(0.3) hue-rotate(10deg)'
+              filter: `
+                drop-shadow(0 0 18px rgba(201,164,76,.30))
+                drop-shadow(0 0 45px rgba(201,164,76,.18))
+              `,
             }}
           />
         </div>
